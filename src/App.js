@@ -5,59 +5,63 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {/* Logo i nazwa */}
         <div className="header-left">
-          <img src="logo.png" alt="Logo" />
+          <img src="logo.jpg" alt="Logo" />
           <h1>AgroManager</h1>
         </div>
 
-        {/* Nazwa użytkownika */}
         <div className="header-right">
           <p>Username</p>
         </div>
       </header>
 
       <div className="container">
-        {/* Nawigacja */}
         <div class="items">
           <div class="items-head">
-            <p>UX DESIGN</p>
-            
+            <p>Modules</p>
+            <hr />
           </div>
-          
           <div class="items-body">
             <div class="items-body-content">
-              <span>Web Usabilty Testing</span>
-              <i class="fa fa-angle-right"></i>
+              <p>Management</p>
             </div>
             <div class="items-body-content">
-              <span>Design of Everyday Things</span>
-              <i class="fa fa-angle-right"></i>
+              <p>Budget</p>
             </div>
             <div class="items-body-content">
-              <span>Practical Empathy: For Collaboration & Creativity in Your Work</span>
-              <i class="fa fa-angle-right"></i>
+              <p>Machines</p>
             </div>
             <div class="items-body-content">
-              <span>About Face: The Essentials of Interaction Design</span>
-              <i class="fa fa-angle-right"></i>
+              <p>Magazines</p>
             </div>
           </div>
         </div>
 
-        {/* Główna zawartość */}
         <main>
-          {/* Umieść swoje elementy głównej zawartości tutaj */}
+          <div class="items-head">
+            <p>Dashboard</p>
+            <hr />
+          </div>
+          
+          <div className="grid-container">
+            <div className="grid-item">Div 1<img src="logo.jpg" alt="Logo" /></div>
+            <div className="grid-item">Div 2<img src="logo.jpg" alt="Logo" /></div>
+            <div className="grid-item">Div 3<img src="logo.jpg" alt="Logo" /></div>
+            <div className="grid-item">Div 4<img src="logo.jpg" alt="Logo" /></div>
+          </div>
         </main>
       </div>
 
-      <footer className="App-footer">
-          <p>Copyright</p>
-        <div>
-          <a href="#">Link 1</a>
+    <footer className="App-footer">
+      <div className="footer-left">
+
+        <div className="footer-links">
+          <a href="#">Podstrona login</a>
           <a href="#">Link 2</a>
         </div>
-      </footer>
+      </div>
+      <p className="footer-text">© 2023 Dekodery. All rights reserved.</p>
+    </footer>
 
     </div>
   );
