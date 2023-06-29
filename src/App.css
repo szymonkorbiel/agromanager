@@ -86,12 +86,23 @@ main {
   border: 1px solid black;
   padding: 5%;
   width: 100%;
+  display: flex;
+  align-items: center;
 }
-.grid-item img {
-  width: 30%;
-  margin: 1%;
+.grid-item p {
+  margin: 10%;
+  color: #0B5AA2;
+  font-weight: bold;
+  font-size: 20px;
+}
+.placeholder {
+  width: 25%; 
+  height: auto; 
 }
 
+.chart {
+  margin-left: 10px;
+}
 /*list*/
 .items {
   width: 300px;
