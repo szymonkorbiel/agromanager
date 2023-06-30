@@ -4,6 +4,7 @@ import Management from './pages/Management';
 import Budget from './pages/Budget';
 import Warehouses from './pages/Warehouses';
 import Machines from './pages/Machines';
+import Login from './pages/Login';
 import React, { Component } from 'react';
 
 import './App.css';
@@ -20,6 +21,7 @@ class App extends Component {
           <Route exact path="/management" element={<Management/>}/>
           <Route path="/warehouses" element={<Warehouses/>}/>
           <Route path="/machines" element={<Machines/>}/>
+          <Route path="/login" element={<Login/>}/>
         </Routes>
     </Router>
         );

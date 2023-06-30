@@ -1,0 +1,109 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.wholediv {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  
+  background: linear-gradient(
+    135deg,
+    #242e4d,
+    #897e79
+  );
+  font-family: 'Roboto', helvetica, arial, sans-serif;
+  font-size: 1.5em;
+  
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.login h1{
+  color: white;
+}
+
+.login-form {
+  width: 100%;
+  padding: 2em;
+  position: relative;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.lf--label {
+  width: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f6f8;
+  cursor: pointer;
+}
+
+.lf--input {
+  flex: 1;
+  padding: 1em;
+  border: 0;
+  margin: 5px;
+  color: #8f8f8f;
+  font-size: 1rem;
+}
+
+.lf--input:focus {
+  outline: none;
+  transition: transform .15s ease;
+  transform: scale(1.1);
+}
+
+.lf--submit {
+  display: block;
+  padding: 1em;
+  width: 100%;
+  background: linear-gradient(to right, #35c3c1, #00d6b7);
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: .75em;
+  font-weight: 600;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.lf--submit:focus {
+  outline: none;
+  transition: transform .15s ease;
+  transform: scale(1.1);
+}
+
+.submit-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+::placeholder {
+  color: #8f8f8f;
+}
