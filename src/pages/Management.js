@@ -1,20 +1,22 @@
 import React from 'react';
+import Slider from '../Slider';
 import '../App.css';
 import {Link} from 'react-router-dom';
 
 function Management() {
     return (
       <div>
-        <h2>Management</h2>
-        <div className="App">
+      <div className="App">
       <header className="App-header">
         <div className="header-left">
           <img src="../logo.jpg" alt="Logo" />
           <h1>AgroManager</h1>
         </div>
-
+        <div className="slider-container">
+            <Slider />
+          </div>
         <div className="header-right">
-          <p>Username</p>
+          <p>You are logged as: <br />Username</p>
         </div>
       </header>
 
@@ -46,14 +48,11 @@ function Management() {
         <main>
           <div class="items-head">
             <p>Dashboard</p>
+            <span className='items-desc'>Take charge of your farm operations by implementing efficient management practices, enabling you to optimize productivity and maximize profitability. </span>
             <hr />
           </div>
-          
           <div className="grid-container">
-            <div className="grid-item">Div 1<img src=".public/logo.jpg" alt="Logo" /></div>
-            <div className="grid-item">Div 2<img src=".public/logo.jpg" alt="Logo" /></div>
-            <div className="grid-item">Div 3<img src=".public/logo.jpg" alt="Logo" /></div>
-            <div className="grid-item">Div 4<img src=".public/logo.jpg" alt="Logo" /></div>
+            
           </div>
         </main>
       </div>
@@ -62,7 +61,7 @@ function Management() {
       <div className="footer-left">
 
         <div className="footer-links">
-          <a href="#">Podstrona login</a>
+          <Link to="/login"><p>Podstrona login</p></Link>
           <a href="#">Link 2</a>
         </div>
       </div>
@@ -70,7 +69,7 @@ function Management() {
     </footer>
 
     </div>
-      </div>
+    </div>
     );
   }
 

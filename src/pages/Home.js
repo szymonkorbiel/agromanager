@@ -1,20 +1,22 @@
 import React from 'react';
+import Slider from '../Slider';
 import '../App.css';
 import {Link} from 'react-router-dom';
 
 export default function Home() {
   return (
     <div>
-      <h2>Home</h2>
       <div className="App">
       <header className="App-header">
         <div className="header-left">
           <img src="../logo.jpg" alt="Logo" />
           <h1>AgroManager</h1>
         </div>
-
+        <div className="slider-container">
+            <Slider />
+          </div>
         <div className="header-right">
-          <p>You are logged in as: <br />Username</p>
+          <p>You are logged as: <br />Username</p>
         </div>
       </header>
 
@@ -65,7 +67,7 @@ export default function Home() {
             </div>
             <div className="grid-item" >
               <img src="../placeholder4.png" alt="placeholder4" className="placeholder"/>
-              <p className="description">Visualize essential information through detailed charts that showcase the quantity of raw materials and the availability of stored materials in your warehouses and silos. Access real-time data and trends to effectively manage your inventory, optimize resource utilization, and make informed decisions regarding procurement, storage, and distribution.</p>
+              <p className="description">Visualize essential information through detailed charts that showcase the quantity of raw materials and the availability of stored materials in your warehouses and silos.</p>
             </div>
           </div>
         </main>
