@@ -1,0 +1,20 @@
+.leaflet-draw-tooltip {
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #000;
+}
+
+.leaflet-draw-actions {
+  background-color: #fff;
+  border: 1px solid #000;
+}
+
+.leaflet-draw-edit-edit {
+  color: #fff;
+  background-color: #00f;
+}
+
+.leaflet-draw-edit-remove {
+  color: #fff;
+  background-color: #f00;
+}

@@ -275,6 +275,7 @@ main {
   font-size: 12px;
 }
 
+
 .login{
   background-color: '#282c34';
       height: '100vh';
@@ -282,6 +283,8 @@ main {
       justify-content: 'center';
       align-items: 'center';
 }
+
+
 @keyframes icon {
   0%,
   100% {
